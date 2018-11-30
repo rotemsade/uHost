@@ -1,21 +1,21 @@
 .background {
     background: url("../images/plans-background.jpg") center/cover;
     filter: grayscale(50%);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: fixed;
-    top: 42px;
+    top: 2.6rem;
     left: 0;
     z-index: -1;
 }
 
 .packages {
-    padding-top: 32px;
+    padding-top: 2rem;
 }
 
 .package {
     width: 80%;
-    margin: 16px 0;
+    margin: 1rem 0;
     border: 4px solid #0e4f1f;
     border-left: none;
     position: relative;
@@ -56,18 +56,18 @@
     text-decoration: none;
     color: inherit;
     display: block;
-    padding: 32px;
+    padding: 2rem;
 }
 
 .package__badge {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 20px;
-    font-size: 12px;
+    margin: 1.2rem;
+    font-size: 0.75rem;
     color: #ffffff;
     background: #ff5454;
-    padding: 8px;
+    padding: 0.5rem;
 }
 
 #premium_plan .package__title {
@@ -84,8 +84,8 @@
 
 .package__description {
     color: #0e4f1f;
-    font-size: 20px;
-    padding: 16px;
+    font-size: 1.2rem;
+    padding: 1rem;
     border: 1px solid #0e4f1f;
     background: #ffffff;
 }
