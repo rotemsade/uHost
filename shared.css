@@ -6,6 +6,10 @@ body {
     margin: 0px;
 }
 
+main {
+    min-height: calc(100vh - 3.4rem - 8rem);
+}
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -177,6 +181,13 @@ body {
     outline: none;
 }
 
+.button[disabled] {
+    cursor: not-allowed;
+    border-color: #a1a1a1;
+    background: #ccc;
+    color: #a1a1a1; 
+}
+
 .main-footer {
     background: #000000;
     padding: 1rem;
@@ -209,6 +220,10 @@ body {
 }
 
 @media (min-width: 40rem) {
+    main {
+        min-height: calc(100vh - 1.2rem - 8rem);
+    }
+
     .main-nav {
         display: inline-block;
         width: calc(100% - 44px);
