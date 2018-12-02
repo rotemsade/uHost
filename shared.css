@@ -19,7 +19,7 @@ body {
 
 .main-header {
     width: 100%;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 1rem;
     background: #2ddf5c;
     position: fixed;
     top: 0;
@@ -76,6 +76,7 @@ body {
     background: #ff1b68;
     padding: 0.5rem 1rem;
     border-radius: 8px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .main-nav__item--cta a:hover,
@@ -102,9 +103,10 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.4rem;
-    height: 1.4rem;
+    height: 2.2rem;
     display: inline-block;
     vertical-align: middle;
+    padding-left: 1.1rem;
 }
 
 .main-header-brand__link img {
@@ -112,7 +114,7 @@ body {
 }
 
 .main-nav{
-    display: inline-block;
+    display: none;
     text-align: right;
     width: calc(100% - 7.6rem);
     vertical-align: middle;
@@ -177,7 +179,7 @@ body {
 
 .main-footer {
     background: #000000;
-    padding: 2rem;
+    padding: 1rem;
     margin-top: 4rem;
 }
 
@@ -186,8 +188,9 @@ body {
 }
 
 .main-footer__link {
-    display: inline-block;
+    display: block;
     margin: 0 1rem;
+    margin: 1rem 0;
     /* width: calc(100% / 2 - 40px); */
 }
 
@@ -203,4 +206,33 @@ body {
 
 .open {
     display: block !important;
+}
+
+@media (min-width: 40rem) {
+    .main-nav {
+        display: inline-block;
+        width: calc(100% - 44px);
+    }
+
+    .toggle-button {
+        display: none;
+    }
+
+    .main-header {
+        padding: 0.7rem 1rem;
+    }
+
+    .main-header-brand__link {
+        height: 1.4rem;
+        padding-left: 0;
+    }
+
+    .main-footer {
+        padding: 2rem;
+    }
+
+    .main-footer__link {
+        display: inline-block;
+        margin: 0 1rem;
+    }
 }

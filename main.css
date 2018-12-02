@@ -1,7 +1,7 @@
 #product-overview {
     background: linear-gradient(to top, rgba(80, 68, 18, 0.9) 10%, transparent), url("images/freedom.jpg") left 10% bottom 70%/cover no-repeat border-box, #ff1b68;
     /* padding: 0.6rem; */
-    height: 50vh;
+    height: 33vh;
     margin-top: 2.6rem;
     position: relative;
 }
@@ -10,8 +10,9 @@
     color: #ffffff;
     font-family: 'Anton', sans-serif;
     position: absolute;
-    bottom: 25%;
-    left: 5%
+    bottom: 3%;
+    left: 5%;
+    font-size: 1.6rem;
 }
 
 .section-title {
@@ -19,26 +20,17 @@
     text-align: center;
 }
 
-.plan-list {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
-
 .plan {
     background: #d5ffdc;
     text-align: center;
     padding: 1rem;
-    margin: 0.5rem;
-    display: inline-block;
-    width: 30%;
-    vertical-align: middle;
+    margin: 0.5rem 0;
+    width: 100%;
 }
 
 .plan--highlighted {
     background: #19b84c;
     color: #ffffff;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .plan__annotation {
@@ -82,12 +74,6 @@
 
 .key-features__list {
     text-align: center;
-}
-
-.key-feature {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
 }
 
 .key-feature_description {
@@ -158,3 +144,51 @@
     background: #ff5454;
     border-color: #ff5454;
   }
+
+  @media (min-width: 40rem) {
+    #product-overview {
+        height: 50vh;
+        background-position: 15% 75%;
+    }
+
+    #product-overview h1 {
+        font-size: 3rem;
+    }
+
+    .plan {
+        display: inline-block;
+        width: 30%;
+        vertical-align: middle;
+        margin: 0.3rem;
+        min-width: 12.5rem;
+        max-width: 26rem;
+    }
+
+    .plan-list {
+        text-align: center;
+        margin: auto;
+    }
+
+    .plan--highlighted {
+         box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .key-feature {
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+    }
+}
+
+@media (min-width: 40rem) and (max-width: 44rem) {
+    .plan__annotation {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 39rem) and (max-height: 23rem) {
+    #product-overview {
+        height: 50vh;
+        background-position: 15% 75%;
+    }
+}

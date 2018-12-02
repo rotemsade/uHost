@@ -10,7 +10,7 @@
 }
 
 .packages {
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 
 .package {
@@ -88,5 +88,22 @@
     padding: 1rem;
     border: 1px solid #0e4f1f;
     background: #ffffff;
+}
+
+@media (min-width: 40rem) {
+    main {
+      margin: 3rem auto;
+      max-width: 93.75rem;
+    }
+}
+
+@media (min-width: 93.75rem) {
+    .package {
+        border-left: 4px solid #0e4f1f;
+    }
+
+    #free_plan {
+        border-right: 4px solid #0e4f1f;
+    }
 }
 
